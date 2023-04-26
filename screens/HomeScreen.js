@@ -14,13 +14,13 @@ const HomeScreen = () => {
     workout,
  } = useContext(FitnessItems);
  return (
-    <ScrollView style={{marginTop:40}}>
+    <ScrollView style={{marginTop:40, backgroundColor:"white"}}>
       <View
         style={{
           backgroundColor: "#0000ff",
           padding: 10,
           height: 200,
-          width: "100%",
+          width: "100%"
         }}
       >
         <Text style={{ color: "white", fontWeight: "bold", fontSize: 18 }}>
@@ -97,8 +97,10 @@ const HomeScreen = () => {
             }}
           />
         </View>
-        <FitnessCards/>
       </View>
+      {/* <Divider height={60} /> */}
+      <View style={{ height: 60, width: "100%", backgroundColor: "transparent"}} />
+      <FitnessCards/>
     </ScrollView>
   );
 };
